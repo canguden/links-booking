@@ -51,7 +51,7 @@ export default function Home() {
             height={250}
             width={250}
             alt="Vakantiescout"
-            className="h-40 w-40  text-center flex mx-auto rounded-full object-fill"
+            className="h-40 w-40  text-center flex mx-auto rounded-full object-fill bg-blue-900"
           />
           <h1 className=" text-3xl text-white font-extrabold justify-center text-center mb-10 mt-5">
             VakantieScout NL
