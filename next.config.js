@@ -7,6 +7,7 @@ const nextConfig = {
       "www.corendon.nl",
       "sundio-media.azureedge.net",
       "prodblogsunweb2020store.blob.core.windows.net",
+      "www.vakantiediscounter.nl",
     ],
   },
 };
