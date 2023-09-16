@@ -2,11 +2,11 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import { BiSolidHomeCircle } from "react-icons/bi";
-import { BsStarFill } from "react-icons/bs";
+import { BsStar, BsStarFill } from "react-icons/bs";
 import { FcFlashOn } from "react-icons/fc";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { LiaSearchLocationSolid } from "react-icons/lia";
-import logo from "@/public/linkslogo.svg";
+import logo from "@/public/linkslogo.png";
 import Head from "next/head";
 
 export default function Home() {
@@ -14,7 +14,8 @@ export default function Home() {
     <>
       <Head>
         <title>
-          VakantieScout - Links - De Beste Deals, Aanbiedingen, Reviews en Blog
+          VakantieScout - Links - De Beste Deals, Aanbiedingen, Reviews en
+          Nieuws
         </title>
         <meta
           name="description"
@@ -58,7 +59,7 @@ export default function Home() {
             VakantieScout NL
           </h1>
           <p className="mb-10 mt-2 text-white">
-            De #1 Vakantie Website van Nederland en Belgie
+            De #1 Vakantie Website van Nederland
           </p>
           <ul className="text-black max-w-xl mx-4 sm:mx-auto items-center gap-2">
             <Link href="https://vakantiescout.nl/" target="_blank">
@@ -93,17 +94,17 @@ export default function Home() {
                       <h1 className="flex items-center gap-1">
                         🚀 Nieuwste Kortingsactie ‼️
                       </h1>
-                      <p className="text-sm">11 augustus 2023</p>
+                      <p className="text-sm">16 september 2023</p>
                     </div>
                   </div>
                 </li>
               </Link>
               <Link
-                href="https://ds1.nl/c/?si=729&li=44046&wi=385520&ws=VakantieScout&dl=nazomer"
+                href="https://ds1.nl/c/?si=729&li=44046&wi=385520&ws=VakantieScout&dl=vakanties%2Fwinterzon%3FdepartDate%3D%255B231101%2C231130%255D"
                 target="_blank"
               >
                 <Image
-                  src="https://images.corendonresources.com/NL/Nazomer-Kanjers_Topbanner_1168x500.webp"
+                  src="https://images.corendonresources.com/NL/Winterzon_Topbanner_1168x500.webp"
                   width={440}
                   height={540}
                   alt="alt"
@@ -119,18 +120,18 @@ export default function Home() {
             >
               <li className="flex items-center  rounded-tl-lg rounded-tr-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  ">
                 <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
-                  <FcFlashOn className="text-yellow-400" /> Flits Deal!
+                  <FcFlashOn className="text-yellow-400" /> Nu Populair!
                 </div>
               </li>
             </Link>
 
             <div className="relative top-0  w-full  object-fill">
               <Link
-                href="https://www.elizawashere.nl/griekenland/karpathos/gianniou/sophid-suites?utm_source=Guden%20Ecom&utm_medium=tradetracker&network=tradetracker"
+                href="https://ds1.nl/c/?si=729&li=44046&wi=385520&ws=VakantieScout&dl=curacao%3FdepartDate%3D%255B231101%2C240331%255D"
                 target="_blank"
               >
                 <Image
-                  src="https://sundio-media.azureedge.net/products/Images/Original/42800000/67000/42867087-Original.jpg?mode=crop&scale=both&width=960&height=540"
+                  src="https://images.corendonresources.com/L5E74A3W1600H1066.webp?v=220603124717"
                   width={440}
                   height={540}
                   alt="alt"
@@ -140,26 +141,23 @@ export default function Home() {
                 <div className="absolute top-4 left-2 py-2 px-2 bg-orange-500 rounded-xl text-sm text-white">
                   <h1 className="flex items-center gap-1">
                     <LiaSearchLocationSolid />
-                    Karpathos, Griekenland
+                    Curaçao 🇨🇼
+                  </h1>
+                </div>
+                <div className="absolute bottom-20 right-2 py-2 px-2 bg-orange-500 rounded-full text-sm text-white">
+                  <h1 className="flex items-center gap-1 font-extrabold text-xl">
+                    <span className="text-xs font-bold italic">vanaf</span> €545
                   </h1>
                 </div>
 
                 <div className=" text-start bg-gray-100 py-2 px-2 rounded-bl-xl rounded-br-xl">
                   <div className="text-white flex flex-col justify-start text-xl font-bold">
                     <div className="flex justify-between items-center text-black">
-                      <h1>Sophid Wellness Suites</h1>
+                      <h1>Heerlijk genieten in het tropische Curaçao</h1>
                       <div>
                         <BsBoxArrowUpRight className="h-4 w-4" />
                       </div>
                     </div>
-                    <ul className="flex ">
-                      <li className="flex  items-center gap-2">
-                        <BsStarFill className="text-yellow-400" />
-                        <BsStarFill className="text-yellow-400" />
-                        <BsStarFill className="text-yellow-400" />
-                        <BsStarFill className="text-yellow-400" />
-                      </li>
-                    </ul>
                   </div>
                 </div>
               </Link>
@@ -192,7 +190,7 @@ export default function Home() {
                 <div className="absolute top-4 left-2 py-2 px-2 bg-orange-500 rounded-xl text-sm text-white">
                   <h1 className="flex items-center gap-1">
                     <LiaSearchLocationSolid />
-                    Lissabon, Portugal
+                    Lissabon, Portugal 🇵🇹
                   </h1>
                 </div>
 
@@ -206,8 +204,6 @@ export default function Home() {
                     </div>
                     <ul className="flex ">
                       <li className="flex  items-center gap-2">
-                        <BsStarFill className="text-yellow-400" />
-                        <BsStarFill className="text-yellow-400" />
                         <BsStarFill className="text-yellow-400" />
                         <BsStarFill className="text-yellow-400" />
                       </li>
