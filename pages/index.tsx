@@ -8,6 +8,7 @@ import { BsBoxArrowUpRight } from "react-icons/bs";
 import { LiaSearchLocationSolid } from "react-icons/lia";
 import logo from "@/public/linkslogo.png";
 import Head from "next/head";
+import hacienda from "@/public/haciendanaxamena.jpg";
 
 export default function Home() {
   return (
@@ -113,6 +114,59 @@ export default function Home() {
                 />
               </Link>
             </div>
+
+            <Link
+              href="https://ds1.nl/c/?si=7805&li=1362777&wi=385520&ws=&dl=portugal%2Flissabon%2Flissabon%2Fselina_secret_garden_lissabon"
+              target="_blank"
+            >
+              <li className="flex items-center mt-5 rounded-tl-lg rounded-tr-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  ">
+                <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  💎 Uniek
+                </div>
+              </li>
+            </Link>
+
+            <Link
+              href="https://tc.tradetracker.net/?c=14392&m=12&a=446931&r=VakantieScout&u=%2Fnl%2Fsrl%3FthemeId%3D600%26search%3D100-38040%26sem_keyword%3Dhacienda%2520na%2520xamena%26sem_creativeid%3D612165073871%26sem_matchtype%3Dp%26sem_network%3Dg%26sem_device%3Dc%26sem_placement%3D%26sem_target%3D%26sem_adposition%3D%26sem_param1%3D%26sem_param2%3D%26sem_campaignid%3D20408268687%26sem_adgroupid%3D157553662688%26sem_targetid%3Dkwd-539392071%26sem_location%3D9065301%26cipc%3Dsem%26cip%3D3119000360%26gad%3D1%26gclid%3DCjwKCAjwpJWoBhA8EiwAHZFzfozXnzXbcpvgj6xXFObKykZEofo9z4QzwCIx0UN7PmLjGg1RYccTmxoCd-EQAvD_BwE"
+              target="_blank"
+            >
+              <div className="relative top-0  w-full  object-fill">
+                <Image
+                  src={hacienda}
+                  width={440}
+                  height={540}
+                  alt="alt"
+                  priority={true}
+                  className="w-full h-60  object-cover"
+                />
+                <div className="absolute top-4 left-2 py-2 px-2 bg-orange-500 rounded-xl text-sm text-white">
+                  <h1 className="flex items-center gap-1">
+                    <LiaSearchLocationSolid />
+                    Ibiza, Spanje 🇪🇸
+                  </h1>
+                </div>
+
+                <div className=" text-start bg-gray-100 py-2 px-2 rounded-bl-xl rounded-br-xl mb-5">
+                  <div className="text-white flex flex-col justify-start text-xl font-bold">
+                    <div className="flex justify-between items-center text-black">
+                      <h1>Hacienda Na Xamena</h1>
+                      <div>
+                        <BsBoxArrowUpRight className="h-4 w-4" />
+                      </div>
+                    </div>
+                    <ul className="flex ">
+                      <li className="flex  items-center gap-2">
+                        <BsStarFill className="text-yellow-400" />
+                        <BsStarFill className="text-yellow-400" />
+                        <BsStarFill className="text-yellow-400" />
+                        <BsStarFill className="text-yellow-400" />
+                        <BsStarFill className="text-yellow-400" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </Link>
 
             <Link
               href="https://www.elizawashere.nl/griekenland/karpathos/gianniou/sophid-suites?utm_source=Guden%20Ecom&utm_medium=tradetracker&network=tradetracker"
