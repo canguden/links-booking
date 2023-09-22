@@ -121,6 +121,51 @@ export default function Home() {
             >
               <li className="flex items-center mt-5 rounded-tl-lg rounded-tr-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  ">
                 <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  Curaçao by June
+                </div>
+              </li>
+            </Link>
+
+            <Link
+              href="https://ds1.nl/c/?si=3115&li=1137544&wi=385520&ws=&dl=curacao"
+              target="_blank"
+              rel="sponsored noopener"
+            >
+              <div className="relative top-0  w-full  object-fill">
+                <Image
+                  src="https://images.corendonresources.com/L1E11216A1W1024H684.webp?v=230915103259"
+                  width={440}
+                  height={540}
+                  alt="alt"
+                  priority={true}
+                  className="w-full h-60  object-center"
+                />
+                <div className="absolute top-4 left-2 py-2 px-2 bg-orange-500 rounded-xl text-sm text-white">
+                  <h1 className="flex items-center gap-1">
+                    <LiaSearchLocationSolid />
+                    Curaçao
+                  </h1>
+                </div>
+
+                <div className=" text-start bg-gray-100 py-2 px-2 rounded-bl-xl rounded-br-xl mb-5">
+                  <div className="text-white flex flex-col justify-start text-xl font-bold">
+                    <div className="flex justify-between items-center text-black">
+                      <h1>Kleinschalige vakanties</h1>
+                      <div>
+                        <BsBoxArrowUpRight className="h-4 w-4" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+
+            <Link
+              href="https://ds1.nl/c/?si=7805&li=1362777&wi=385520&ws=&dl=portugal%2Flissabon%2Flissabon%2Fselina_secret_garden_lissabon"
+              target="_blank"
+            >
+              <li className="flex items-center mt-5 rounded-tl-lg rounded-tr-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  ">
+                <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
                   💎 Uniek
                 </div>
               </li>
