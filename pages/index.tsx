@@ -70,40 +70,75 @@ export default function Home() {
                 </div>
               </li>
             </Link>
-            <Link href="https://vakantiescout.nl/aanbieders" target="_blank">
+            <Link
+              href="https://vakantiescout.nl/aanbieders/vakantiediscounter"
+              target="_blank"
+            >
               <li className="flex items-center  rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
                 <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
                   📊 Reviews
                 </div>
               </li>
             </Link>
-            <Link href="https://vakantiescout.nl/ontdekken" target="_blank">
+            <Link href="https://vakantiescout.nl/deals" target="_blank">
               <li className="flex items-center  rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
                 <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
-                  🔍 Ontdekken
+                  🔍 Deals{" "}
+                </div>
+              </li>
+            </Link>
+
+            <Link href="https://vakantiescout.nl/reischecklist" target="_blank">
+              <li className="flex items-center  rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
+                <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  ✅ Reis Checklist{" "}
+                </div>
+              </li>
+            </Link>
+            <Link href="https://vakantiescout.nl/blog" target="_blank">
+              <li className="flex items-center  rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
+                <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  🗞️ Blog{" "}
                 </div>
               </li>
             </Link>
             <div className=" w-full lg:w-full mt-5 mb-5">
-              <Link
-                href="https://ds1.nl/c/?si=729&li=44046&wi=385520&ws=VakantieScout&dl=nazomer"
-                target="_blank"
-              >
+              <Link href="https://vakantiescout.nl/kortingsacties">
                 <li className="flex items-center  rounded-tl-lg rounded-tr-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  ">
                   <div className="flex justify-between items-center text-center   mx-auto gap-2 mt-1  text-xl font-semibold ">
                     <div className="flex flex-col">
                       <h1 className="flex items-center gap-1">
-                        🚀 Nieuwste Kortingsactie ‼️
+                        🚀 Nieuwste Kortingsactie: Stapelkorting
                       </h1>
-                      <p className="text-sm">16 september 2023</p>
                     </div>
                   </div>
                 </li>
               </Link>
-              <Link
-                href="https://ds1.nl/c/?si=729&li=44046&wi=385520&ws=VakantieScout&dl=vakanties%2Fwinterzon%3FdepartDate%3D%255B231101%2C231130%255D"
-                target="_blank"
-              >
+              <Link href="https://vakantiescout.nl/kortingsacties">
+                <Image
+                  src="https://cdn.prijsvrij.nl/Upload/Images/Acties/Stapelkorting/Resultatenbanners_Stapelkorting_2023_D.jpg"
+                  width={440}
+                  height={540}
+                  alt="alt"
+                  priority={true}
+                  className="w-full h-full  rounded-bl-xl rounded-br-xl object-fill bg-black opacity-90 hover:opacity-100"
+                />
+              </Link>
+            </div>
+
+            <div className=" w-full lg:w-full mt-5 mb-5">
+              <Link href="https://vakantiescout.nl/kortingsacties">
+                <li className="flex items-center  rounded-tl-lg rounded-tr-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  ">
+                  <div className="flex justify-between items-center text-center   mx-auto gap-2 mt-1  text-xl font-semibold ">
+                    <div className="flex flex-col">
+                      <h1 className="flex items-center gap-1">
+                        🚀 Kortingsactie: Winterzon
+                      </h1>
+                    </div>
+                  </div>
+                </li>
+              </Link>
+              <Link href="https://vakantiescout.nl/kortingsacties">
                 <Image
                   src="https://images.corendonresources.com/NL/Winterzon_Topbanner_1168x500.webp"
                   width={440}

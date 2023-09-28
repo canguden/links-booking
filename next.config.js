@@ -8,6 +8,7 @@ const nextConfig = {
       "sundio-media.azureedge.net",
       "prodblogsunweb2020store.blob.core.windows.net",
       "www.vakantiediscounter.nl",
+      "cdn.prijsvrij.nl",
     ],
   },
 };
