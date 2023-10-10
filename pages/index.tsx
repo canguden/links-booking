@@ -9,6 +9,7 @@ import { LiaSearchLocationSolid } from "react-icons/lia";
 import logo from "@/public/linkslogo.png";
 import Head from "next/head";
 import hacienda from "@/public/haciendanaxamena.jpg";
+import tuikorting from "@/public/tuikorting.png";
 
 export default function Home() {
   return (
@@ -102,6 +103,31 @@ export default function Home() {
                 </div>
               </li>
             </Link>
+
+            <div className=" w-full lg:w-full mt-5 mb-5">
+              <Link href="https://vakantiescout.nl/kortingsacties">
+                <li className="flex items-center  rounded-tl-lg rounded-tr-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  ">
+                  <div className="flex justify-between items-center text-center   mx-auto gap-2 mt-1  text-xl font-semibold ">
+                    <div className="flex flex-col">
+                      <h1 className="flex items-center gap-1">
+                        🚀 Tui Ticketdeals
+                      </h1>
+                    </div>
+                  </div>
+                </li>
+              </Link>
+              <Link href="https://vakantiescout.nl/kortingsacties">
+                <Image
+                  src={tuikorting}
+                  width={440}
+                  height={540}
+                  alt="alt"
+                  priority={true}
+                  className="w-full h-full  rounded-bl-xl rounded-br-xl object-fill bg-black opacity-90 hover:opacity-100"
+                />
+              </Link>
+            </div>
+
             <div className=" w-full lg:w-full mt-5 mb-5">
               <Link href="https://vakantiescout.nl/kortingsacties">
                 <li className="flex items-center  rounded-tl-lg rounded-tr-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  ">
