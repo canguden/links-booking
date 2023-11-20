@@ -71,10 +71,7 @@ export default function Home() {
                 </div>
               </li>
             </Link>
-            <Link
-              href="https://vakantiescout.nl/aanbieders/vakantiediscounter"
-              target="_blank"
-            >
+            <Link href="https://vakantiescout.nl/aanbieders/" target="_blank">
               <li className="flex items-center  rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
                 <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
                   📊 Reviews
@@ -93,6 +90,16 @@ export default function Home() {
               <li className="flex items-center  rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
                 <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
                   ✅ Reis Checklist{" "}
+                </div>
+              </li>
+            </Link>
+            <Link
+              href="https://vakantiescout.nl/officiele-vakanties"
+              target="_blank"
+            >
+              <li className="flex items-center  rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
+                <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  🎉 Vakanties en Feesdagen{" "}
                 </div>
               </li>
             </Link>
@@ -158,7 +165,7 @@ export default function Home() {
                   <div className="flex justify-between items-center text-center   mx-auto gap-2 mt-1  text-xl font-semibold ">
                     <div className="flex flex-col">
                       <h1 className="flex items-center gap-1">
-                        🚀 Kortingsactie: Winterzon
+                        🚀 Kortingsactie: Black Flyday
                       </h1>
                     </div>
                   </div>
@@ -166,7 +173,7 @@ export default function Home() {
               </Link>
               <Link href="https://vakantiescout.nl/kortingsacties">
                 <Image
-                  src="https://images.corendonresources.com/NL/Winterzon_Topbanner_1168x500.webp"
+                  src="https://images.corendonresources.com/NL/Black-FLYday_Zomer24_1168x500.webp"
                   width={440}
                   height={540}
                   alt="alt"
