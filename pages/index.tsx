@@ -2,14 +2,25 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 import { BiSolidHomeCircle } from "react-icons/bi";
-import { BsStar, BsStarFill } from "react-icons/bs";
+import { BsBookmarkStarFill, BsStar, BsStarFill } from "react-icons/bs";
 import { FcFlashOn } from "react-icons/fc";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { LiaSearchLocationSolid } from "react-icons/lia";
+import { ImAirplane } from "react-icons/im";
+import {
+  FaInstagram,
+  FaTwitter,
+  FaFacebook,
+  FaYoutube,
+  FaNewspaper,
+  FaCalendarAlt,
+  FaFilePdf,
+  FaPaperPlane,
+} from "react-icons/fa";
 import logo from "@/public/linkslogo.png";
 import Head from "next/head";
 import hacienda from "@/public/haciendanaxamena.jpg";
-import tuikorting from "@/public/tuikorting.png";
+import { FaRankingStar } from "react-icons/fa6";
 
 export default function Home() {
   return (
@@ -60,53 +71,109 @@ export default function Home() {
           <h1 className=" text-3xl text-white font-extrabold justify-center text-center  mt-5">
             VakantieScout NL
           </h1>
-          <p className="mb-10 mt-2 text-white">
+          <p className="mt-2 text-white">
             De #1 Vakantie Website van Nederland
           </p>
+          <ul className="mb-10 mt-10 mx-auto text-white flex items-center gap-8 text-3xl justify-center">
+            <li className="bg-blue-900 py-2 px-2 rounded-full">
+              <FaInstagram />
+            </li>
+            <li className="bg-blue-900 py-2 px-2 rounded-full">
+              <FaFacebook />
+            </li>
+            <li className="bg-blue-900 py-2 px-2 rounded-full">
+              <FaTwitter />
+            </li>
+            <li className="bg-blue-900 py-2 px-2 rounded-full">
+              <FaYoutube />
+            </li>
+          </ul>
           <ul className="text-black max-w-xl mx-4 sm:mx-auto items-center gap-2">
             <Link href="https://vakantiescout.nl/" target="_blank">
-              <li className="flex items-center  rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
-                <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
-                  🌎 VakantieScout.nl
+              <li className="flex  justify-between rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
+                <div className="flex items-center text-start justify-start ml-2  gap-2 mt-1  text-xl font-semibold ">
+                  <Image
+                    src={logo}
+                    height={40}
+                    width={40}
+                    alt="VakantieScout.nl"
+                    className="rounded-full"
+                  />
                 </div>
-              </li>
-            </Link>
-            <Link href="https://vakantiescout.nl/aanbieders/" target="_blank">
-              <li className="flex items-center  rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
-                <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
-                  📊 Reviews
-                </div>
-              </li>
-            </Link>
-            <Link href="https://vakantiescout.nl/deals" target="_blank">
-              <li className="flex items-center  rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
-                <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
-                  🔍 Deals{" "}
+                <div className="flex justify-center items-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  VakantieScout.nl
                 </div>
               </li>
             </Link>
 
-            <Link href="https://vakantiescout.nl/reischecklist" target="_blank">
-              <li className="flex items-center  rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
-                <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
-                  ✅ Reis Checklist{" "}
-                </div>
-              </li>
-            </Link>
             <Link
-              href="https://vakantiescout.nl/officiele-vakanties"
+              href="https://vakantiescout.nl/aanbiederthemas"
               target="_blank"
             >
-              <li className="flex items-center  rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
-                <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
-                  🎉 Vakanties en Feesdagen{" "}
+              <li className="flex  justify-between rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
+                <div className="flex items-center text-start justify-start ml-2  gap-2 mt-1  text-xl font-semibold ">
+                  <BsBookmarkStarFill className="h-8 w-8" />
+                </div>
+                <div className="flex justify-center items-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  Vakantie Thema&apos;s
                 </div>
               </li>
             </Link>
-            <Link href="https://vakantiescout.nl/blog" target="_blank">
-              <li className="flex items-center  rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
-                <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
-                  🗞️ Blog{" "}
+
+            <Link href="https://vakantiescout.nl/vakantiedagen" target="_blank">
+              <li className="flex  justify-between rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
+                <div className="flex items-center text-start justify-start ml-2  gap-2 mt-1  text-xl font-semibold ">
+                  <FaCalendarAlt className="h-8 w-8" />
+                </div>
+                <div className="flex justify-center items-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  Vakantie en Feestdagen
+                </div>
+              </li>
+            </Link>
+
+            <Link href="https://vakantiescout.nl/aanbieders" target="_blank">
+              <li className="flex  justify-between rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
+                <div className="flex items-center text-start justify-start ml-2  gap-2 mt-1  text-xl font-semibold ">
+                  <ImAirplane className="h-8 w-8 rotate-90" />
+                </div>
+                <div className="flex justify-center items-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  Reisaanbieders
+                </div>
+              </li>
+            </Link>
+
+            <Link
+              href="https://vakantiescout.nl/aanbieders/vakantiediscounter"
+              target="_blank"
+            >
+              <li className="flex  justify-between rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
+                <div className="flex items-center text-start justify-start ml-2  gap-2 mt-1  text-xl font-semibold ">
+                  <FaRankingStar className="h-8 w-8" />
+                </div>
+                <div className="flex justify-center items-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  Reviews
+                </div>
+              </li>
+            </Link>
+
+            <Link href="https://vakantiescout.nl/nieuws" target="_blank">
+              <li className="flex  justify-between rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
+                <div className="flex items-center text-start justify-start ml-2  gap-2 mt-1  text-xl font-semibold ">
+                  <FaNewspaper className="h-8 w-8" />
+                </div>
+                <div className="flex justify-center items-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  Vakantie Nieuws
+                </div>
+              </li>
+            </Link>
+
+            <Link href="https://vakantiescout.nl/checklist" target="_blank">
+              <li className="flex  justify-between rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
+                <div className="flex items-center text-start justify-start ml-2  gap-2 mt-1  text-xl font-semibold ">
+                  <FaFilePdf className="h-8 w-8" />
+                </div>
+                <div className="flex justify-center items-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  Inpaklijst
                 </div>
               </li>
             </Link>
@@ -117,31 +184,7 @@ export default function Home() {
                   <div className="flex justify-between items-center text-center   mx-auto gap-2 mt-1  text-xl font-semibold ">
                     <div className="flex flex-col">
                       <h1 className="flex items-center gap-1">
-                        🚀 Tui Ticketdeals
-                      </h1>
-                    </div>
-                  </div>
-                </li>
-              </Link>
-              <Link href="https://vakantiescout.nl/kortingsacties">
-                <Image
-                  src={tuikorting}
-                  width={440}
-                  height={540}
-                  alt="alt"
-                  priority={true}
-                  className="w-full h-full  rounded-bl-xl rounded-br-xl object-fill bg-black opacity-90 hover:opacity-100"
-                />
-              </Link>
-            </div>
-
-            <div className=" w-full lg:w-full mt-5 mb-5">
-              <Link href="https://vakantiescout.nl/kortingsacties">
-                <li className="flex items-center  rounded-tl-lg rounded-tr-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  ">
-                  <div className="flex justify-between items-center text-center   mx-auto gap-2 mt-1  text-xl font-semibold ">
-                    <div className="flex flex-col">
-                      <h1 className="flex items-center gap-1">
-                        🚀 Nieuwste Kortingsactie: Stapelkorting
+                        🚀 Prijsvrij Stapelkorting
                       </h1>
                     </div>
                   </div>
@@ -165,7 +208,7 @@ export default function Home() {
                   <div className="flex justify-between items-center text-center   mx-auto gap-2 mt-1  text-xl font-semibold ">
                     <div className="flex flex-col">
                       <h1 className="flex items-center gap-1">
-                        🚀 Kortingsactie: Black Flyday
+                        🚀 Corendon Vroegboekweken
                       </h1>
                     </div>
                   </div>
@@ -173,7 +216,7 @@ export default function Home() {
               </Link>
               <Link href="https://vakantiescout.nl/kortingsacties">
                 <Image
-                  src="https://images.corendonresources.com/NL/Black-FLYday_Zomer24_1168x500.webp"
+                  src="https://images.corendonresources.com/NL/VDVBW2023-Header_728x200.jpg"
                   width={440}
                   height={540}
                   alt="alt"
@@ -189,6 +232,13 @@ export default function Home() {
             >
               <li className="flex items-center mt-5 rounded-tl-lg rounded-tr-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  ">
                 <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  <Image
+                    src="https://www.prijsvrij.nl/MVVMC/Themes/Images/Base/ico/flags/CW.svg"
+                    height={30}
+                    width={30}
+                    alt="CW"
+                    className="rounded-sm"
+                  />
                   Curaçao by June
                 </div>
               </li>
@@ -208,12 +258,6 @@ export default function Home() {
                   priority={true}
                   className="w-full h-60  object-center"
                 />
-                <div className="absolute top-4 left-2 py-2 px-2 bg-orange-500 rounded-xl text-sm text-white">
-                  <h1 className="flex items-center gap-1">
-                    <LiaSearchLocationSolid />
-                    Curaçao
-                  </h1>
-                </div>
 
                 <div className=" text-start bg-gray-100 py-2 px-2 rounded-bl-xl rounded-br-xl mb-5">
                   <div className="text-white flex flex-col justify-start text-xl font-bold">
