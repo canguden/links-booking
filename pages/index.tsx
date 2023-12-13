@@ -5,7 +5,7 @@ import { BiSolidHomeCircle } from "react-icons/bi";
 import { BsBookmarkStarFill, BsStar, BsStarFill } from "react-icons/bs";
 import { FcFlashOn } from "react-icons/fc";
 import { BsBoxArrowUpRight } from "react-icons/bs";
-import { LiaSearchLocationSolid } from "react-icons/lia";
+import { IoGiftSharp } from "react-icons/io5";
 import { ImAirplane } from "react-icons/im";
 import {
   FaInstagram,
@@ -75,18 +75,26 @@ export default function Home() {
             De #1 Vakantie Website van Nederland
           </p>
           <ul className="mb-10 mt-10 mx-auto text-white flex items-center gap-8 text-3xl justify-center">
-            <li className="bg-blue-900 py-2 px-2 rounded-full">
-              <FaInstagram />
-            </li>
-            <li className="bg-blue-900 py-2 px-2 rounded-full">
-              <FaFacebook />
-            </li>
-            <li className="bg-blue-900 py-2 px-2 rounded-full">
-              <FaTwitter />
-            </li>
-            <li className="bg-blue-900 py-2 px-2 rounded-full">
-              <FaYoutube />
-            </li>
+            <Link href="https://instagram.com/vakantiescout">
+              <li className="bg-blue-900 py-2 px-2 rounded-full">
+                <FaInstagram />
+              </li>
+            </Link>
+            <Link href="https://facebook.com/vakantiescout">
+              <li className="bg-blue-900 py-2 px-2 rounded-full">
+                <FaFacebook />
+              </li>
+            </Link>
+            <Link href="https://twitter.com/vakantiescout">
+              <li className="bg-blue-900 py-2 px-2 rounded-full">
+                <FaTwitter />
+              </li>
+            </Link>
+            <Link href="https://youtube.com/@vakantiescout">
+              <li className="bg-blue-900 py-2 px-2 rounded-full">
+                <FaYoutube />
+              </li>
+            </Link>
           </ul>
           <ul className="text-black max-w-xl mx-4 sm:mx-auto items-center gap-2">
             <Link href="https://vakantiescout.nl/" target="_blank">
@@ -106,27 +114,13 @@ export default function Home() {
               </li>
             </Link>
 
-            <Link
-              href="https://vakantiescout.nl/aanbiederthemas"
-              target="_blank"
-            >
+            <Link href="https://vakantiescout.nl/ontdekken" target="_blank">
               <li className="flex  justify-between rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
                 <div className="flex items-center text-start justify-start ml-2  gap-2 mt-1  text-xl font-semibold ">
                   <BsBookmarkStarFill className="h-8 w-8" />
                 </div>
                 <div className="flex justify-center items-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
-                  Vakantie Thema&apos;s
-                </div>
-              </li>
-            </Link>
-
-            <Link href="https://vakantiescout.nl/vakantiedagen" target="_blank">
-              <li className="flex  justify-between rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
-                <div className="flex items-center text-start justify-start ml-2  gap-2 mt-1  text-xl font-semibold ">
-                  <FaCalendarAlt className="h-8 w-8" />
-                </div>
-                <div className="flex justify-center items-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
-                  Vakantie en Feestdagen
+                  Deals
                 </div>
               </li>
             </Link>
@@ -138,6 +132,31 @@ export default function Home() {
                 </div>
                 <div className="flex justify-center items-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
                   Reisaanbieders
+                </div>
+              </li>
+            </Link>
+
+            <Link
+              href="https://vakantiescout.nl/kortingsacties"
+              target="_blank"
+            >
+              <li className="flex  justify-between rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
+                <div className="flex items-center text-start justify-start ml-2  gap-2 mt-1  text-xl font-semibold ">
+                  <IoGiftSharp className="h-8 w-8" />
+                </div>
+                <div className="flex justify-center items-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  Kortingsacties
+                </div>
+              </li>
+            </Link>
+
+            <Link href="https://vakantiescout.nl/vakantiedagen" target="_blank">
+              <li className="flex  justify-between rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
+                <div className="flex items-center text-start justify-start ml-2  gap-2 mt-1  text-xl font-semibold ">
+                  <FaCalendarAlt className="h-8 w-8" />
+                </div>
+                <div className="flex justify-center items-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
+                  Vakantie en Feestdagen
                 </div>
               </li>
             </Link>
@@ -167,7 +186,7 @@ export default function Home() {
               </li>
             </Link>
 
-            <Link href="https://vakantiescout.nl/checklist" target="_blank">
+            <Link href="https://vakantiescout.nl/reischecklist" target="_blank">
               <li className="flex  justify-between rounded-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  mb-5">
                 <div className="flex items-center text-start justify-start ml-2  gap-2 mt-1  text-xl font-semibold ">
                   <FaFilePdf className="h-8 w-8" />
@@ -227,7 +246,7 @@ export default function Home() {
             </div>
 
             <Link
-              href="https://ds1.nl/c/?si=7805&li=1362777&wi=385520&ws=&dl=portugal%2Flissabon%2Flissabon%2Fselina_secret_garden_lissabon"
+              href="https://vakantiescout.nl/curacao/hotels/mangrove-beach-resort"
               target="_blank"
             >
               <li className="flex items-center mt-5 rounded-tl-lg rounded-tr-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  ">
@@ -239,19 +258,19 @@ export default function Home() {
                     alt="CW"
                     className="rounded-sm"
                   />
-                  Curaçao by June
+                  Laatste Review
                 </div>
               </li>
             </Link>
 
             <Link
-              href="https://ds1.nl/c/?si=3115&li=1137544&wi=385520&ws=&dl=curacao"
+              href="https://vakantiescout.nl/curacao/hotels/mangrove-beach-resort"
               target="_blank"
               rel="sponsored noopener"
             >
               <div className="relative top-0  w-full  object-fill">
                 <Image
-                  src="https://images.corendonresources.com/L1E11216A1W1024H684.webp?v=230915103259"
+                  src="https://images.corendonresources.com/L1E9404A1W1600H1066.webp?v=221116145344"
                   width={440}
                   height={540}
                   alt="alt"
@@ -262,7 +281,7 @@ export default function Home() {
                 <div className=" text-start bg-gray-100 py-2 px-2 rounded-bl-xl rounded-br-xl mb-5">
                   <div className="text-white flex flex-col justify-start text-xl font-bold">
                     <div className="flex justify-between items-center text-black">
-                      <h1>Kleinschalige vakanties</h1>
+                      <h1>Corendon Mangrove Beach Resort</h1>
                       <div>
                         <BsBoxArrowUpRight className="h-4 w-4" />
                       </div>
@@ -272,7 +291,7 @@ export default function Home() {
               </div>
             </Link>
 
-            <Link
+            {/* <Link
               href="https://ds1.nl/c/?si=7805&li=1362777&wi=385520&ws=&dl=portugal%2Flissabon%2Flissabon%2Fselina_secret_garden_lissabon"
               target="_blank"
             >
@@ -323,106 +342,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </Link>
-
-            <Link
-              href="https://www.elizawashere.nl/griekenland/karpathos/gianniou/sophid-suites?utm_source=Guden%20Ecom&utm_medium=tradetracker&network=tradetracker"
-              target="_blank"
-            >
-              <li className="flex items-center  rounded-tl-lg rounded-tr-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  ">
-                <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
-                  <FcFlashOn className="text-yellow-400" /> Nu Populair!
-                </div>
-              </li>
-            </Link>
-
-            <div className="relative top-0  w-full  object-fill">
-              <Link
-                href="https://ds1.nl/c/?si=729&li=44046&wi=385520&ws=VakantieScout&dl=curacao%3FdepartDate%3D%255B231101%2C240331%255D"
-                target="_blank"
-              >
-                <Image
-                  src="https://images.corendonresources.com/L5E74A3W1600H1066.webp?v=220603124717"
-                  width={440}
-                  height={540}
-                  alt="alt"
-                  priority={true}
-                  className="w-full h-60  object-cover"
-                />
-                <div className="absolute top-4 left-2 py-2 px-2 bg-orange-500 rounded-xl text-sm text-white">
-                  <h1 className="flex items-center gap-1">
-                    <LiaSearchLocationSolid />
-                    Curaçao 🇨🇼
-                  </h1>
-                </div>
-                <div className="absolute bottom-20 right-2 py-2 px-2 bg-orange-500 rounded-full text-sm text-white">
-                  <h1 className="flex items-center gap-1 font-extrabold text-xl">
-                    <span className="text-xs font-bold italic">vanaf</span> €545
-                  </h1>
-                </div>
-
-                <div className=" text-start bg-gray-100 py-2 px-2 rounded-bl-xl rounded-br-xl">
-                  <div className="text-white flex flex-col justify-start text-xl font-bold">
-                    <div className="flex justify-between items-center text-black">
-                      <h1>Heerlijk genieten in het tropische Curaçao</h1>
-                      <div>
-                        <BsBoxArrowUpRight className="h-4 w-4" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            </div>
-
-            <Link
-              href="https://ds1.nl/c/?si=7805&li=1362777&wi=385520&ws=&dl=portugal%2Flissabon%2Flissabon%2Fselina_secret_garden_lissabon"
-              target="_blank"
-            >
-              <li className="flex items-center mt-5 rounded-tl-lg rounded-tr-lg  bg-gray-200 hover:bg-gray-300 duration-300 text-gray-800 py-4  ">
-                <div className="flex items-center text-center justify-center  mx-auto gap-2 mt-1  text-xl font-semibold ">
-                  🏙️ Populaire Stedentrip!
-                </div>
-              </li>
-            </Link>
-
-            <div className="relative top-0  w-full  object-fill">
-              <Link
-                href="https://ds1.nl/c/?si=7805&li=1362777&wi=385520&ws=&dl=portugal%2Flissabon%2Flissabon%2Fselina_secret_garden_lissabon"
-                target="_blank"
-              >
-                <Image
-                  src="https://www.vakantiediscounter.nl/tools/content/images/accommodations/e595b7d7-1675-41dd-9678-6bb37477b351/970/0.jpg"
-                  width={440}
-                  height={540}
-                  alt="alt"
-                  priority={true}
-                  className="w-full h-60  object-cover"
-                />
-                <div className="absolute top-4 left-2 py-2 px-2 bg-orange-500 rounded-xl text-sm text-white">
-                  <h1 className="flex items-center gap-1">
-                    <LiaSearchLocationSolid />
-                    Lissabon, Portugal 🇵🇹
-                  </h1>
-                </div>
-
-                <div className=" text-start bg-gray-100 py-2 px-2 rounded-bl-xl rounded-br-xl">
-                  <div className="text-white flex flex-col justify-start text-xl font-bold">
-                    <div className="flex justify-between items-center text-black">
-                      <h1>Selina&apos;s Secret Garden</h1>
-                      <div>
-                        <BsBoxArrowUpRight className="h-4 w-4" />
-                      </div>
-                    </div>
-                    <ul className="flex ">
-                      <li className="flex  items-center gap-2">
-                        <BsStarFill className="text-yellow-400" />
-                        <BsStarFill className="text-yellow-400" />
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </Link>
-            </div>
+            </Link> */}
           </ul>
         </div>
       </div>
